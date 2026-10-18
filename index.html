@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ateliê do Sabor — Cursos de Culinária</title>
+<meta name="description" content="Cursos presenciais de culinária para toda a família com a Chef Helena Duarte. Culinária Essencial para jovens e adultos e Culinária Kids para crianças de 6 a 12 anos.">
+<link rel="canonical" href="https://jnnetto.github.io/atelie-do-sabor/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Ateliê do Sabor">
+<meta property="og:title" content="Ateliê do Sabor: cursos de culinária para todas as idades">
+<meta property="og:description" content="Culinária Essencial para quem quer aprender do zero (a partir de 13 anos) e Culinária Kids para crianças de 6 a 12 anos, em dupla com um responsável. Aulas presenciais com a Chef Helena Duarte.">
+<meta property="og:url" content="https://jnnetto.github.io/atelie-do-sabor/">
+<meta property="og:image" content="https://jnnetto.github.io/atelie-do-sabor/img/compartilhamento.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Mãos cortando pimentão e cenoura ao lado do título “A cozinha é para todas as idades” e do logo do Ateliê do Sabor.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#1F6650">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  document.documentElement.classList.add("intro-open");
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+<section class="intro" id="abertura" aria-labelledby="intro-titulo">
+  <canvas class="intro__canvas" id="introCanvas" aria-hidden="true"></canvas>
+  <div class="intro__scrim" aria-hidden="true"></div>
+
+  <div class="intro__inner">
+    <div class="intro__brand">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" width="40" height="40">
+          <circle cx="24" cy="24" r="22" fill="#F2A93C"/>
+          <path d="M14 26c0-5.5 4.5-10 10-10s10 4.5 10 10" stroke="#12261F" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <rect x="13" y="26" width="22" height="4" rx="2" fill="#12261F"/>
+          <path d="M20 16v-3M24 15v-4M28 16v-3" stroke="#12261F" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span>Ateliê do Sabor</span>
+    </div>
+
+    <div class="intro__content">
+      <p class="intro__chip">Escola de culinária presencial · com a Chef Helena Duarte</p>
+      <h1 id="intro-titulo" class="intro__title">A cozinha é para <em>todas</em> as idades</h1>
+      <p class="intro__lead">Cursos práticos para quem nunca cozinhou e para crianças que querem aprender ao lado de um adulto da família.</p>
+
+      <p class="intro__question" id="intro-pergunta">Por onde você quer começar?</p>
+      <ul class="intro__paths" aria-labelledby="intro-pergunta">
+        <li>
+          <a class="intro-path" href="#curso-essencial" data-intro-alvo="curso-essencial">
+            <span class="intro-path__tag">Culinária Essencial</span>
+            <span class="intro-path__title">Quero aprender a cozinhar do zero</span>
+            <span class="intro-path__meta">A partir de 13 anos · 8 aulas de 3h</span>
+            <svg class="intro-path__arrow" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M13.2 5.3 11.8 6.7l4.3 4.3H4v2h12.1l-4.3 4.3 1.4 1.4L20 12z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="intro-path intro-path--kids" href="#curso-kids" data-intro-alvo="curso-kids">
+            <span class="intro-path__tag">Culinária Kids</span>
+            <span class="intro-path__title">Quero cozinhar junto com uma criança</span>
+            <span class="intro-path__meta">6 a 12 anos · em dupla com o responsável</span>
+            <svg class="intro-path__arrow" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M13.2 5.3 11.8 6.7l4.3 4.3H4v2h12.1l-4.3 4.3 1.4 1.4L20 12z"/></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <a class="intro__more" href="#conteudo-principal" data-intro-alvo="conteudo-principal">
+      <span>Entrar no ateliê</span>
+      <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M13 20h-2V7.8l-4.6 4.6L5 11l7-7 7 7-1.4 1.4L13 7.8z"/></svg>
+    </a>
+  </div>
+</section>
+
+<header class="site-header" id="topo">
+  <div class="container site-header__inner">
+    <a class="brand" href="#abertura" aria-label="Ateliê do Sabor, rever a abertura" title="Rever a abertura">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" width="34" height="34">
+          <circle cx="24" cy="24" r="22" fill="var(--color-primary)"/>
+          <path d="M14 26c0-5.5 4.5-10 10-10s10 4.5 10 10" stroke="var(--color-surface)" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <rect x="13" y="26" width="22" height="4" rx="2" fill="var(--color-secondary)"/>
+          <path d="M20 16v-3M24 15v-4M28 16v-3" stroke="var(--color-surface)" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="brand__text">Ateliê do Sabor</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navPrincipal" aria-label="Abrir menu de navegação">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav" id="navPrincipal" aria-label="Navegação principal">
+      <ul>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#instrutora">A Chef</a></li>
+        <li><a href="#informacoes">Informações</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <a class="btn btn--primary btn--small" href="#inscricao">Pré-inscrição</a>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo-principal">
+
+  <section class="hero" aria-labelledby="hero-titulo">
+    <div class="container hero__grid">
+      <div class="hero__copy reveal">
+        <p class="eyebrow">Curso presencial · turmas pequenas</p>
+        <h2 id="hero-titulo" class="hero__title">Aprenda a cozinhar com as próprias mãos, no seu ritmo</h2>
+        <p class="hero__lead">O Ateliê do Sabor ensina o básico da cozinha a adultos e idosos que nunca pegaram numa faca de jeito, e transforma crianças em pequenos cozinheiros ao lado de um adulto da família. Aulas práticas, turmas de poucas pessoas e a orientação da Chef Helena Duarte.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--large" href="#cursos">Conhecer os cursos</a>
+          <a class="btn btn--ghost btn--large" href="#inscricao">Fazer pré-inscrição</a>
+        </div>
+        <ul class="hero__badges" aria-label="Diferenciais do ateliê">
+          <li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg> Turmas de até 12 alunos</li>
+          <li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg> Ingredientes e avental inclusos</li>
+          <li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg> Certificado de conclusão</li>
+        </ul>
+      </div>
+
+      <figure class="hero__media">
+        <picture>
+          <source type="image/webp" srcset="img/hero-cortando-legumes-640.webp 640w, img/hero-cortando-legumes-1200.webp 1200w" sizes="(min-width: 900px) 480px, 100vw">
+          <img src="img/hero-cortando-legumes-640.jpg" srcset="img/hero-cortando-legumes-640.jpg 640w, img/hero-cortando-legumes-1200.jpg 1200w" sizes="(min-width: 900px) 480px, 100vw" width="1200" height="900" loading="lazy" decoding="async" alt="Mãos de uma pessoa adulta fatiando pimentão vermelho e cenoura sobre uma tábua de madeira.">
+        </picture>
+        <span class="hero__sticker" aria-hidden="true">8 aulas<br>práticas</span>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section numeros" aria-labelledby="numeros-titulo">
+    <div class="container numeros__inner">
+      <p class="eyebrow eyebrow--center">Em números</p>
+      <h2 id="numeros-titulo" class="section__title">O Ateliê em números</h2>
+      <p class="section__lead">Turmas pequenas, prática de verdade e regras claras desde a primeira aula.</p>
+
+      <ul class="numeros__grid">
+        <li class="stat tom--manjericao reveal">
+          <svg class="stat__icone" aria-hidden="true" viewBox="0 0 24 24"><path d="M17 21a1 1 0 0 0 1-1v-5.35c0-.46.32-.84.73-1.04a4 4 0 0 0-2.14-7.59 5 5 0 0 0-9.18 0 4 4 0 0 0-2.14 7.59c.41.2.73.58.73 1.04V20a1 1 0 0 0 1 1Z"/><path d="M6 17h12"/></svg>
+          <p class="stat__valor"><span class="stat__num" data-valor="8">8</span> <span class="stat__unidade">aulas</span></p>
+          <p class="stat__texto">práticas e presenciais em cada curso</p>
+        </li>
+
+        <li class="stat tom--acafrao reveal">
+          <svg class="stat__icone" aria-hidden="true" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <p class="stat__valor"><span class="stat__num" data-valor="12">12</span> <span class="stat__unidade">alunos</span></p>
+          <p class="stat__texto">no máximo por turma — no Kids, são 8 duplas</p>
+        </li>
+
+        <li class="stat tom--paprica stat--alto reveal">
+          <svg class="stat__icone" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="m15.48 12.89 1.51 8.53a.5.5 0 0 1-.81.47l-3.58-2.69a1 1 0 0 0-1.2 0l-3.59 2.69a.5.5 0 0 1-.81-.47l1.51-8.53"/></svg>
+          <p class="stat__valor"><span class="stat__num" data-valor="15">15</span> <span class="stat__unidade">anos</span></p>
+          <p class="stat__texto">de cozinha profissional da Chef Helena Duarte, que conduz todas as aulas</p>
+          <figure class="stat__foto">
+            <picture>
+              <source type="image/webp" srcset="img/numeros-cortando-cenouras-400.webp 400w, img/numeros-cortando-cenouras-800.webp 800w" sizes="(min-width: 900px) 360px, (min-width: 600px) 50vw, 100vw">
+              <img src="img/numeros-cortando-cenouras-400.jpg" srcset="img/numeros-cortando-cenouras-400.jpg 400w, img/numeros-cortando-cenouras-800.jpg 800w" sizes="(min-width: 900px) 360px, (min-width: 600px) 50vw, 100vw" width="800" height="1000" loading="lazy" decoding="async" alt="Mãos cortando cenouras em rodelas sobre uma tábua amarela, ao lado de abobrinhas e cenouras raladas.">
+            </picture>
+          </figure>
+        </li>
+
+        <li class="stat tom--azeite reveal">
+          <svg class="stat__icone" aria-hidden="true" viewBox="0 0 24 24"><path d="M21.42 10.92a1 1 0 0 0-.02-1.84l-8.57-3.9a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.83l8.57 3.91a2 2 0 0 0 1.66 0Z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+          <p class="stat__valor"><span class="stat__num" data-valor="75">75</span><span class="stat__unidade stat__unidade--colada">%</span></p>
+          <p class="stat__texto">de presença garantem o certificado de conclusão</p>
+        </li>
+
+        <li class="stat tom--berinjela reveal">
+          <svg class="stat__icone" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="m9 16 2 2 4-4"/></svg>
+          <p class="stat__valor"><span class="stat__num" data-valor="7">7</span> <span class="stat__unidade">dias</span></p>
+          <p class="stat__texto">antes do início: até lá, o reembolso é integral</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="cursos" aria-labelledby="cursos-titulo">
+    <div class="container">
+      <p class="eyebrow eyebrow--center">Nossos cursos</p>
+      <h2 id="cursos-titulo" class="section__title">Um curso para cada fase da família</h2>
+      <p class="section__lead">Escolha o programa ideal: aulas de base para quem nunca cozinhou, ou uma experiência em dupla para crianças e seus responsáveis.</p>
+
+      <div class="courses">
+
+        <article class="course-card reveal" id="curso-essencial" aria-labelledby="curso-essencial-titulo">
+          <div class="course-card__corner" aria-hidden="true"></div>
+          <figure class="course-card__media">
+            <picture>
+              <source type="image/webp" srcset="img/essencial-tecnica-de-corte-480.webp 480w, img/essencial-tecnica-de-corte-960.webp 960w" sizes="(min-width: 860px) 540px, 100vw">
+              <img src="img/essencial-tecnica-de-corte-480.jpg" srcset="img/essencial-tecnica-de-corte-480.jpg 480w, img/essencial-tecnica-de-corte-960.jpg 960w" sizes="(min-width: 860px) 540px, 100vw" width="960" height="540" loading="lazy" decoding="async" alt="Mãos firmes usando uma faca de chef para picar pimentão vermelho bem miúdo numa tábua de madeira.">
+            </picture>
+          </figure>
+          <div class="course-card__head">
+            <span class="course-card__tag">A partir de 13 anos · sem experiência prévia</span>
+            <h3 id="curso-essencial-titulo">Culinária Essencial</h3>
+            <p class="course-card__price"><strong>R$ 480</strong> à vista <span>ou 4x de R$ 130 no cartão</span></p>
+          </div>
+
+          <p class="course-card__desc">Do primeiro corte de legumes aos pães e sobremesas: oito aulas presenciais para construir sua base na cozinha, em turmas de no máximo 12 alunos.</p>
+
+          <dl class="course-card__facts">
+            <div><dt>Formato</dt><dd>8 aulas presenciais de 3 horas</dd></div>
+            <div><dt>Vagas</dt><dd>Até 12 alunos por turma</dd></div>
+            <div><dt>Inclui</dt><dd>Ingredientes e avental</dd></div>
+          </dl>
+
+          <h4 class="course-card__subheading">O que você vai cozinhar</h4>
+          <ol class="course-card__modules">
+            <li>Higiene e segurança na cozinha</li>
+            <li>Cortes e técnicas básicas</li>
+            <li>Caldos e molhos</li>
+            <li>Massas e pães simples</li>
+            <li>Sobremesas</li>
+          </ol>
+
+          <h4 class="course-card__subheading">Turmas disponíveis</h4>
+          <ul class="course-card__schedule">
+            <li><strong>Manhã</strong><span>Seg. e qua., 8h às 11h · 4 semanas</span></li>
+            <li><strong>Noite</strong><span>Ter. e qui., 19h às 22h · 4 semanas</span></li>
+            <li><strong>Sábado</strong><span>Sáb., 14h às 17h · 8 semanas</span></li>
+          </ul>
+
+          <a class="btn btn--primary btn--full" href="#inscricao" data-curso="essencial">Pré-inscrever-se na Culinária Essencial</a>
+        </article>
+
+        <article class="course-card course-card--kids reveal" id="curso-kids" aria-labelledby="curso-kids-titulo">
+          <div class="course-card__corner" aria-hidden="true"></div>
+          <figure class="course-card__media">
+            <picture>
+              <source type="image/webp" srcset="img/kids-dupla-cozinhando-480.webp 480w, img/kids-dupla-cozinhando-960.webp 960w" sizes="(min-width: 860px) 540px, 100vw">
+              <img src="img/kids-dupla-cozinhando-480.jpg" srcset="img/kids-dupla-cozinhando-480.jpg 480w, img/kids-dupla-cozinhando-960.jpg 960w" sizes="(min-width: 860px) 540px, 100vw" width="960" height="540" loading="lazy" decoding="async" alt="Mãos de um adulto e de uma criança arrumando juntas batatas cortadas em palito numa assadeira.">
+            </picture>
+          </figure>
+          <div class="course-card__head">
+            <span class="course-card__tag">6 a 12 anos · em dupla com um responsável</span>
+            <h3 id="curso-kids-titulo">Culinária Kids</h3>
+            <p class="course-card__price"><strong>R$ 560</strong> por dupla <span>ou 4x de R$ 150 no cartão</span></p>
+          </div>
+
+          <p class="course-card__desc">Cada criança cozinha ao lado de um responsável, que também participa de todas as atividades — uma manhã de sábado para aprender e se divertir juntos.</p>
+
+          <dl class="course-card__facts">
+            <div><dt>Formato</dt><dd>8 aulas presenciais de 2 horas</dd></div>
+            <div><dt>Vagas</dt><dd>Até 8 duplas por turma</dd></div>
+            <div><dt>Inclui</dt><dd>Ingredientes e 2 aventais por dupla</dd></div>
+          </dl>
+
+          <h4 class="course-card__subheading">O que a dupla vai cozinhar</h4>
+          <ol class="course-card__modules">
+            <li>Higiene e segurança na cozinha</li>
+            <li>Lanches saudáveis</li>
+            <li>Massas e pães divertidos</li>
+            <li>Sobremesas</li>
+          </ol>
+
+          <h4 class="course-card__subheading">Turma disponível</h4>
+          <ul class="course-card__schedule">
+            <li><strong>Sábado</strong><span>9h às 11h · 8 semanas</span></li>
+          </ul>
+
+          <a class="btn btn--primary btn--full" href="#inscricao" data-curso="kids">Pré-inscrever-se na Culinária Kids</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tint" id="instrutora" aria-labelledby="instrutora-titulo">
+    <div class="container instrutora">
+      <div class="instrutora__avatar reveal" aria-hidden="true">
+        <svg viewBox="0 0 160 160" width="160" height="160">
+          <circle cx="80" cy="80" r="78" fill="var(--color-primary)"/>
+          <circle cx="80" cy="72" r="30" fill="var(--color-surface)"/>
+          <path d="M50 70a30 30 0 0 1 60 0c0-22-14-34-30-34s-30 12-30 34Z" fill="var(--color-surface)"/>
+          <rect x="44" y="110" width="72" height="40" rx="20" fill="var(--color-surface)"/>
+          <text x="80" y="130" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="30" font-weight="600" fill="var(--color-primary)">HD</text>
+        </svg>
+      </div>
+      <div class="instrutora__copy reveal">
+        <p class="eyebrow">Quem conduz as aulas</p>
+        <h2 id="instrutora-titulo">Chef Helena Duarte</h2>
+        <p>Com 15 anos de experiência em cozinha profissional, a Chef Helena Duarte já passou por restaurantes, buffets e eventos antes de se dedicar ao ensino. Hoje, leva essa bagagem para dentro do Ateliê do Sabor, com uma didática paciente, pensada tanto para quem está cozinhando por pela primeira vez quanto para as famílias que vêm aprender juntas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="informacoes" aria-labelledby="informacoes-titulo">
+    <div class="container">
+      <p class="eyebrow eyebrow--center">Antes de se inscrever</p>
+      <h2 id="informacoes-titulo" class="section__title">Informações gerais</h2>
+      <p class="section__lead">Quando as turmas começam, o que já está incluso e as regras de reembolso e certificado.</p>
+
+      <div class="info-bento">
+
+        <article class="info-box info-box--inicio tom--manjericao reveal" aria-labelledby="info-inicio-titulo">
+          <svg class="info-box__icone" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>
+          <h3 id="info-inicio-titulo">Início das turmas</h3>
+
+          <ul class="inicio-lista">
+            <li>
+              <span class="inicio-lista__turma">Manhã</span>
+              <span class="inicio-lista__regra">Todo mês, na primeira segunda-feira</span>
+              <span class="inicio-lista__proxima" data-proxima="manha" hidden></span>
+            </li>
+            <li>
+              <span class="inicio-lista__turma">Noite</span>
+              <span class="inicio-lista__regra">Todo mês, na primeira terça-feira</span>
+              <span class="inicio-lista__proxima" data-proxima="noite" hidden></span>
+            </li>
+            <li>
+              <span class="inicio-lista__turma">Sábado e Kids</span>
+              <span class="inicio-lista__regra">A cada 2 meses, no primeiro sábado de fevereiro, abril, junho, agosto e outubro</span>
+              <span class="inicio-lista__proxima" data-proxima="sabado" hidden></span>
+            </li>
+          </ul>
+
+          <div class="meses" aria-hidden="true">
+            <p class="meses__legenda"><span class="meses__ponto"></span> Meses com início das turmas de sábado e Kids</p>
+            <ol class="meses__lista">
+              <li data-mes="0">jan</li>
+              <li data-mes="1" class="is-inicio">fev</li>
+              <li data-mes="2">mar</li>
+              <li data-mes="3" class="is-inicio">abr</li>
+              <li data-mes="4">mai</li>
+              <li data-mes="5" class="is-inicio">jun</li>
+              <li data-mes="6">jul</li>
+              <li data-mes="7" class="is-inicio">ago</li>
+              <li data-mes="8">set</li>
+              <li data-mes="9" class="is-inicio">out</li>
+              <li data-mes="10">nov</li>
+              <li data-mes="11">dez</li>
+            </ol>
+          </div>
+        </article>
+
+        <article class="info-box tom--berinjela reveal" aria-labelledby="info-reembolso-titulo">
+          <svg class="info-box__icone" aria-hidden="true" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1Z"/><path d="m9 12 2 2 4-4"/></svg>
+          <h3 id="info-reembolso-titulo">Reembolso integral</h3>
+          <p>Cancelamentos feitos até <strong>7 dias antes</strong> do início da turma recebem o valor de volta por completo.</p>
+
+          <div class="prazo" aria-hidden="true">
+            <p class="prazo__marco">Prazo: 7 dias antes</p>
+            <div class="prazo__barra">
+              <span class="prazo__ok"></span>
+              <span class="prazo__fim"></span>
+            </div>
+            <div class="prazo__rotulos">
+              <span>Inscrição</span>
+              <span>Início da turma</span>
+            </div>
+          </div>
+
+          <p class="info-box__exemplo" data-exemplo-reembolso hidden></p>
+        </article>
+
+        <article class="info-box tom--azeite reveal" aria-labelledby="info-certificado-titulo">
+          <svg class="info-box__icone" aria-hidden="true" viewBox="0 0 24 24"><path d="M21.42 10.92a1 1 0 0 0-.02-1.84l-8.57-3.9a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.83l8.57 3.91a2 2 0 0 0 1.66 0Z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+          <h3 id="info-certificado-titulo">Certificado de conclusão</h3>
+          <p>Nos dois cursos, com <strong>75% de presença</strong>: ou seja, pelo menos 6 das 8 aulas.</p>
+          <ol class="aulas" aria-hidden="true">
+            <li class="is-feita">1</li><li class="is-feita">2</li><li class="is-feita">3</li><li class="is-feita">4</li><li class="is-feita">5</li><li class="is-feita">6</li><li>7</li><li>8</li>
+          </ol>
+        </article>
+
+        <article class="info-box tom--acafrao reveal" aria-labelledby="info-incluso-titulo">
+          <svg class="info-box__icone" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <h3 id="info-incluso-titulo">Já incluso no valor</h3>
+          <ul class="info-box__lista">
+            <li>Ingredientes de todas as aulas</li>
+            <li>Avental, na Culinária Essencial</li>
+            <li>Dois aventais por dupla, na Culinária Kids</li>
+          </ul>
+        </article>
+
+        <article class="info-box tom--paprica reveal" aria-labelledby="info-pagamento-titulo">
+          <svg class="info-box__icone" aria-hidden="true" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg>
+          <h3 id="info-pagamento-titulo">Formas de pagamento</h3>
+          <dl class="pagamento">
+            <div>
+              <dt>Essencial</dt>
+              <dd><strong>R$ 480</strong> à vista ou 4x de R$ 130 no cartão</dd>
+            </div>
+            <div>
+              <dt>Kids (por dupla)</dt>
+              <dd><strong>R$ 560</strong> à vista ou 4x de R$ 150 no cartão</dd>
+            </div>
+          </dl>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tint inscricao" id="inscricao" aria-labelledby="inscricao-titulo">
+    <div class="container">
+      <p class="eyebrow eyebrow--center">Garanta sua vaga</p>
+      <h2 id="inscricao-titulo" class="section__title">Pré-inscrição</h2>
+      <p class="section__lead">Leva uns dois minutos e não gera cobrança. Depois do envio, a equipe do Ateliê confirma a sua vaga pelo WhatsApp ou e-mail.</p>
+
+      <div class="inscricao__layout">
+        <div class="inscricao__principal">
+          <form class="form-card" id="formInscricao" novalidate>
+
+            <div class="form-erros" id="formErros" role="alert" tabindex="-1" hidden>
+              <p class="form-erros__titulo" id="formErrosTitulo"></p>
+              <ul class="form-erros__lista" id="formErrosLista"></ul>
+            </div>
+
+            <fieldset class="etapa">
+              <legend class="etapa__titulo"><span class="etapa__num" aria-hidden="true">1</span>Qual curso você quer fazer?</legend>
+              <div class="opcoes opcoes--2">
+                <label class="opcao">
+                  <input class="opcao__input" type="radio" name="curso" id="curso-opcao-essencial" value="essencial" aria-describedby="erro-curso">
+                  <span class="opcao__corpo">
+                    <span class="opcao__titulo">Culinária Essencial</span>
+                    <span class="opcao__meta">A partir de 13 anos · 8 aulas de 3h</span>
+                    <span class="opcao__preco">R$ 480 à vista ou 4x de R$ 130</span>
+                  </span>
+                  <span class="opcao__marca" aria-hidden="true"></span>
+                </label>
+                <label class="opcao opcao--kids">
+                  <input class="opcao__input" type="radio" name="curso" id="curso-opcao-kids" value="kids" aria-describedby="erro-curso">
+                  <span class="opcao__corpo">
+                    <span class="opcao__titulo">Culinária Kids</span>
+                    <span class="opcao__meta">6 a 12 anos, com um responsável · 8 aulas de 2h</span>
+                    <span class="opcao__preco">R$ 560 por dupla ou 4x de R$ 150</span>
+                  </span>
+                  <span class="opcao__marca" aria-hidden="true"></span>
+                </label>
+              </div>
+              <p class="error-message" id="erro-curso"></p>
+            </fieldset>
+
+            <fieldset class="etapa">
+              <legend class="etapa__titulo"><span class="etapa__num" aria-hidden="true">2</span>Qual turma?</legend>
+              <p class="etapa__vazio" id="turmaVazia">Escolha um curso acima para ver as turmas disponíveis.</p>
+              <div class="opcoes opcoes--3" id="opcoesTurma"></div>
+              <p class="error-message" id="erro-turma"></p>
+            </fieldset>
+
+            <fieldset class="etapa">
+              <legend class="etapa__titulo"><span class="etapa__num" aria-hidden="true">3</span><span id="legendaInscrito">Quem vai participar?</span></legend>
+              <div class="campos campos--nome-idade">
+                <div class="field">
+                  <label for="nomeInscrito" id="labelNomeInscrito">Nome completo</label>
+                  <input type="text" id="nomeInscrito" name="nomeInscrito" autocomplete="name" required aria-describedby="erro-nomeInscrito">
+                  <p class="error-message" id="erro-nomeInscrito"></p>
+                </div>
+                <div class="field">
+                  <label for="idadeInscrito" id="labelIdadeInscrito">Idade</label>
+                  <input type="number" id="idadeInscrito" name="idadeInscrito" inputmode="numeric" min="6" max="120" required aria-describedby="dica-idadeInscrito erro-idadeInscrito">
+                  <p class="error-message" id="erro-idadeInscrito"></p>
+                </div>
+              </div>
+              <p class="field__hint" id="dica-idadeInscrito">Escolha um curso para ver a faixa de idade aceita.</p>
+
+              <div class="bloco-responsavel" id="blocoResponsavel" hidden>
+                <p class="bloco-responsavel__aviso">
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+                  <span id="avisoResponsavel">Menores de idade participam com a autorização de um responsável.</span>
+                </p>
+                <div class="field">
+                  <label for="nomeResponsavel">Nome completo do responsável</label>
+                  <input type="text" id="nomeResponsavel" name="nomeResponsavel" autocomplete="name" aria-describedby="erro-nomeResponsavel">
+                  <p class="error-message" id="erro-nomeResponsavel"></p>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="etapa">
+              <legend class="etapa__titulo"><span class="etapa__num" aria-hidden="true">4</span><span id="legendaContato">Como falamos com você?</span></legend>
+              <div class="campos campos--2">
+                <div class="field">
+                  <label for="whatsapp" id="labelWhatsapp">WhatsApp</label>
+                  <input type="tel" id="whatsapp" name="whatsapp" autocomplete="tel" inputmode="tel" placeholder="(00) 00000-0000" required aria-describedby="erro-whatsapp">
+                  <p class="error-message" id="erro-whatsapp"></p>
+                </div>
+                <div class="field">
+                  <label for="email" id="labelEmail">E-mail</label>
+                  <input type="email" id="email" name="email" autocomplete="email" placeholder="nome@exemplo.com" required aria-describedby="erro-email">
+                  <p class="error-message" id="erro-email"></p>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="etapa" aria-describedby="dica-alergias erro-alergias">
+              <legend class="etapa__titulo"><span class="etapa__num" aria-hidden="true">5</span>Alergias e restrições alimentares</legend>
+              <p class="field__hint" id="dica-alergias">Marque tudo o que se aplica a quem vai cozinhar, para a Chef adaptar as receitas.</p>
+              <div class="chips" id="grupoRestricoes">
+                <label class="chip chip--nenhuma"><input type="checkbox" name="restricao" id="semAlergias" value="Nenhuma"><span>Nenhuma</span></label>
+                <label class="chip"><input type="checkbox" name="restricao" value="Glúten"><span>Glúten</span></label>
+                <label class="chip"><input type="checkbox" name="restricao" value="Lactose"><span>Lactose</span></label>
+                <label class="chip"><input type="checkbox" name="restricao" value="Ovo"><span>Ovo</span></label>
+                <label class="chip"><input type="checkbox" name="restricao" value="Amendoim e castanhas"><span>Amendoim e castanhas</span></label>
+                <label class="chip"><input type="checkbox" name="restricao" value="Frutos do mar"><span>Frutos do mar</span></label>
+                <label class="chip"><input type="checkbox" name="restricao" value="Dieta vegetariana"><span>Vegetariana</span></label>
+                <label class="chip"><input type="checkbox" name="restricao" value="Dieta vegana"><span>Vegana</span></label>
+                <label class="chip"><input type="checkbox" name="restricao" id="outraRestricao" value="Outra"><span>Outra</span></label>
+              </div>
+              <div class="field" id="campoAlergias" hidden>
+                <label for="alergias">Conte qual é a restrição ou dê mais detalhes</label>
+                <textarea id="alergias" name="alergias" rows="3" placeholder="Ex.: intolerância a frutose, alergia a kiwi..." aria-describedby="erro-alergias"></textarea>
+              </div>
+              <p class="error-message" id="erro-alergias"></p>
+            </fieldset>
+
+            <div class="form-final">
+              <label class="confirmacao" for="ciencia">
+                <input type="checkbox" id="ciencia" name="ciencia" required aria-describedby="erro-ciencia">
+                <span>Li e concordo com a política de reembolso: devolução integral para cancelamentos até 7 dias antes do início da turma.</span>
+              </label>
+              <p class="error-message" id="erro-ciencia"></p>
+
+              <button type="submit" class="btn btn--primary btn--large btn--full">
+                Enviar pré-inscrição
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M13.2 5.3 11.8 6.7l4.3 4.3H4v2h12.1l-4.3 4.3 1.4 1.4L20 12z"/></svg>
+              </button>
+              <p class="form-fineprint">Página de demonstração: o envio é simulado e nenhum dado sai do seu navegador.</p>
+            </div>
+          </form>
+
+          <div class="form-sucesso" id="formSucesso" tabindex="-1" hidden>
+            <span class="form-sucesso__icone" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>
+            </span>
+            <h3 class="form-sucesso__titulo">Pré-inscrição enviada!</h3>
+            <p class="form-sucesso__texto" id="sucessoTexto"></p>
+            <dl class="form-sucesso__dados" id="sucessoDados"></dl>
+            <p class="form-fineprint">Simulação: nenhum dado foi enviado a um servidor.</p>
+            <button type="button" class="btn btn--ghost" id="novaInscricao">Fazer outra pré-inscrição</button>
+          </div>
+        </div>
+
+        <aside class="resumo" aria-labelledby="resumo-titulo">
+          <p class="resumo__rotulo">Resumo da sua escolha</p>
+          <p class="resumo__curso" id="resumo-titulo" data-resumo="curso">Nenhum curso escolhido ainda</p>
+          <dl class="resumo__dados">
+            <div><dt>Turma</dt><dd data-resumo="turma">—</dd></div>
+            <div><dt>Próximo início</dt><dd data-resumo="inicio">—</dd></div>
+            <div><dt>Reembolso integral até</dt><dd data-resumo="reembolso">—</dd></div>
+            <div><dt>Valor</dt><dd data-resumo="valor">—</dd></div>
+          </dl>
+          <p class="resumo__rotulo resumo__rotulo--passos">Depois do envio</p>
+          <ol class="resumo__passos">
+            <li>A equipe do Ateliê confirma a vaga pelo WhatsApp ou e-mail.</li>
+            <li>Com a vaga confirmada, você recebe as instruções de pagamento.</li>
+            <li>No primeiro dia, é só chegar: ingredientes e avental já estarão na bancada.</li>
+          </ol>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="contato-faixa" id="contato" aria-labelledby="contato-titulo">
+    <div class="container contato">
+      <div class="contato__intro reveal">
+        <p class="contato__eyebrow">Fale com a gente</p>
+        <h2 id="contato-titulo" class="contato__titulo">Ficou com alguma dúvida?</h2>
+        <p class="contato__texto">Pergunte sobre turmas, idade mínima, alergias ou o que mais precisar antes de se inscrever. A equipe do Ateliê responde pelo canal que você preferir.</p>
+      </div>
+
+      <ul class="contato__canais">
+        <li class="canal canal--destaque reveal">
+          <svg class="canal__icone" aria-hidden="true" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></svg>
+          <div class="canal__info">
+            <p class="canal__rotulo">WhatsApp</p>
+            <p class="canal__valor">(00) 00000-0000</p>
+          </div>
+          <div class="canal__acoes">
+            <a class="canal__botao canal__botao--forte" href="https://wa.me/5500000000000">Abrir conversa</a>
+          </div>
+        </li>
+
+        <li class="canal reveal">
+          <svg class="canal__icone" aria-hidden="true" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          <div class="canal__info">
+            <p class="canal__rotulo">E-mail</p>
+            <p class="canal__valor">contato@ateliedosabor.example</p>
+          </div>
+          <div class="canal__acoes">
+            <a class="canal__botao" href="mailto:contato@ateliedosabor.example">Escrever</a>
+            <button type="button" class="canal__botao" data-copiar="contato@ateliedosabor.example" data-copiar-nome="E-mail">Copiar</button>
+          </div>
+        </li>
+
+        <li class="canal reveal">
+          <svg class="canal__icone" aria-hidden="true" viewBox="0 0 24 24"><path d="M20 10c0 4.99-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 14.99 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+          <div class="canal__info">
+            <p class="canal__rotulo">Endereço das aulas</p>
+            <p class="canal__valor">Rua das Palmeiras, 85, Centro</p>
+          </div>
+          <div class="canal__acoes">
+            <button type="button" class="canal__botao" data-copiar="Rua das Palmeiras, 85, Centro" data-copiar-nome="Endereço">Copiar endereço</button>
+          </div>
+        </li>
+      </ul>
+      <p class="visually-hidden" id="avisoCopia" role="status" aria-live="polite"></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div class="brand brand--footer">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" width="28" height="28">
+          <circle cx="24" cy="24" r="22" fill="#F2A93C"/>
+          <path d="M14 26c0-5.5 4.5-10 10-10s10 4.5 10 10" stroke="#12261F" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <rect x="13" y="26" width="22" height="4" rx="2" fill="#12261F"/>
+        </svg>
+      </span>
+      <span class="brand__text">Ateliê do Sabor</span>
+    </div>
+    <p class="site-footer__tagline">Cursos presenciais de culinária para toda a família.</p>
+    <p class="site-footer__copy">© 2026 Ateliê do Sabor. Escola fictícia criada para fins de demonstração.</p>
+    <p class="site-footer__credits">Fotos: Shixart1985, via <a href="https://commons.wikimedia.org/wiki/File:Chopping_red_bell_pepper_and_carrot_in_a_kitchen.jpg">Wikimedia Commons</a> (<a href="https://commons.wikimedia.org/wiki/File:Chef_prepares_fresh_ingredients_by_chopping_red_vegetables.jpg">2</a>, <a href="https://commons.wikimedia.org/wiki/File:Family_cooking_activity_with_kids_preparing_homemade_fries_in_a_cozy_kitchen_setting.jpg">3</a>, <a href="https://commons.wikimedia.org/wiki/File:A_person_is_chopping_bright_orange_carrots.jpg">4</a>), licença <a href="https://creativecommons.org/licenses/by/2.0/deed.pt-br">CC BY 2.0</a>. Imagens recortadas e redimensionadas.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
